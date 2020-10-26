@@ -1,0 +1,52 @@
+<div class="login-component">
+
+  <div class="container">
+    <div class="row justify-content-center">
+
+      <section class="tile bg_1 col-10">
+        <header>Book</header>
+        View:
+        <select #opt (change)="filter(opt.value)">
+          <option>All</option>
+          <option>Received</option>
+          <option>Reviewed</option>
+          <option>Accepted</option>
+          <option>Contract Signed</option>
+          <option>Edited</option>
+          <option>Copyedited</option>
+          <option>Typeset</option>
+          <option>In Print</option>
+        </select>
+        <table class="table col">
+          <thead>
+            <tr>
+              <td>Working title</td>
+              <td>Stage</td>
+              <td>Main editor</td>
+              <td>Last edited</td>
+              <td>Created</td>
+              <td>&nbsp;</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let book of filteredData">
+              <td>{{ book.title }}</td>
+              <td>{{ book.stage }}</td>
+              <td>{{ book.updatedAt | date }}</td>
+              <td>{{ book.createdAt | date }}</td>
+              <td><a [href]="'/edit/'+book.id">Edit</a></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="row">
+          <div class="col">
+            <a href="\create" class="btn">New book</a>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+</div>
