@@ -5,6 +5,12 @@ The Big Books Publishing Co API was built using the Angular framework using a ve
 
 ## Building and deploying
 
+## Requirements
+In order to run the project, you will need to have the API layer running. This could be either locally, on your own AWS account or using the test API's that I have currently running online.
+
+To install these API's please follow the instructions found on [https://github.com/pagelsj/BigBooksPublishing-api](https://github.com/pagelsj/BigBooksPublishing-api).
+*(If you choose to run your own API instances, you will need to update the `BASE_API` variable found in the `environments.ts` file in the root of this application.)*
+
 ### Install and deploy steps
 
  1. Clone the repository using git-cli.
@@ -28,11 +34,9 @@ The website needed to be:
 1. Each page is lazy loaded. The route per page is defined within the page.module file. This allows these page URLs to be updated and removed without having any effect of the project in its entirety.
 2. 3rd party CSS frameworks are precompiled into the style.css file rather than being loaded in the index.html file. Leading to less HTTP requests.
 3. Most of the styling is reusable and created in a way that it would be able to be built out into a custom CSS Framework.
-4. There are no custom services or components imported into the app.module.ts file. Code is only included where and when it is needed.
 
 ## Improvements
 1. I would have loved to add unit tests!
 2. I would have built the pages using components. (This was not done however due to lack of complexity within the task. Components were not needed at this point)
 3. I would have generally built the pages and the API's side-by-side. This would have allowed me to use one API to both Create and Update data.
 4. I would have tested the AOT compilation to ensure it all works properly. (Didn't want to over run the 2hr time limit though)
-5. I would have used TypeScript interfaces.
