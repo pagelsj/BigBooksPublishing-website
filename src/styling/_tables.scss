@@ -1,0 +1,26 @@
+@import "./styling/variables";
+
+table {
+  margin-top: $padding;
+
+  thead {
+    tr {
+      margin-bottom: $padding;
+      text-decoration: underline;
+      font-weight: 300;
+
+      td {
+      }
+    }
+  }
+  tbody {
+    tr {
+      &:hover {
+        background: $color_2;
+      }
+      td {
+
+      }
+    }
+  }
+}
