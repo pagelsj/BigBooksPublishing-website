@@ -16,4 +16,9 @@
     opacity: 0.6;
     cursor: no-drop;
   }
+
+  &--error,
+  &--delete {
+    background: $color_error;
+  }
 }
