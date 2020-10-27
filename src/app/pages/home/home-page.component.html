@@ -17,7 +17,7 @@
           <option>Typeset</option>
           <option>In Print</option>
         </select>
-        <table class="table col">
+        <table class="table col" *ngIf="filteredData.length > 0">
           <thead>
             <tr>
               <td>Working title</td>
@@ -39,6 +39,10 @@
             </tr>
           </tbody>
         </table>
+
+        <p *ngIf="!filteredData.length">
+          There are no books at this stage yet.
+        </p>
 
         <div class="row">
           <div class="col">
