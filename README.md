@@ -1,7 +1,7 @@
 
-# Big Books Publishing Co: API
+# Big Books Publishing Co: Website
 
-The Big Books Publishing Co API was built using the Angular framework using a very simple UI styling 'framework' that built on top of the Bootstrap Grid Framework.
+The Big Books Publishing Co Website was built using the Angular framework using a very simple UI styling 'framework' that built on top of the Bootstrap Grid Framework.
 
 ## Building and deploying
 
