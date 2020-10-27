@@ -10,15 +10,15 @@ export class HomePageComponent implements OnInit {
   booksList = [];
   filteredData = [];
 
-  constructor( private listBooksService: ListBooksService) { }
+  constructor( private listBooksService: ListBooksService ) { }
 
   filter(filterValue) {
-    console.log(filterValue);
     if(filterValue != 'All') {
       this.filteredData = this.booksList.filter(book => book.stage == filterValue);
     } else {
       this.filteredData = this.booksList;
-    }
+    };
+
   }
 
   ngOnInit() {
@@ -27,7 +27,8 @@ export class HomePageComponent implements OnInit {
         console.log(resp);
         this.booksList = resp;
         this.filteredData = resp;
-      })
+      });
+
   }
 
 }
