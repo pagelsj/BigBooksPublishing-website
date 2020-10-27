@@ -1,7 +1,7 @@
 @import "./styling/variables";
 
 table {
-  margin-top: $padding;
+  margin: $padding 0 $padding*2;
 
   thead {
     tr {
