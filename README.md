@@ -40,3 +40,5 @@ The website needed to be:
 2. I would have built the pages using components. (This was not done however due to lack of complexity within the task. Components were not needed at this point)
 3. I would have generally built the pages and the API's side-by-side. This would have allowed me to use one API to both Create and Update data.
 4. I would have tested the AOT compilation to ensure it all works properly. (Didn't want to over run the 2hr time limit though)
+5. Adding the ability to sort items in the list of books.
+6. Given more time I would have liked to add state management. (NGRX or NGXS)
